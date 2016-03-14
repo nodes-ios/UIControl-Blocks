@@ -8,10 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		272F1E3C1C6A4B790098F620 /* UIControl-Blocks.h in Headers */ = {isa = PBXBuildFile; fileRef = 272F1E3B1C6A4B790098F620 /* UIControl-Blocks.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		272F1E431C6A4B790098F620 /* UIControl-Blocks.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 272F1E381C6A4B790098F620 /* UIControl-Blocks.framework */; };
+		272F1E431C6A4B790098F620 /* UIControlBlocks.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 272F1E381C6A4B790098F620 /* UIControlBlocks.framework */; };
 		272F1E481C6A4B790098F620 /* UIControl_BlocksTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 272F1E471C6A4B790098F620 /* UIControl_BlocksTests.m */; };
 		272F1E541C6A4B9C0098F620 /* UIControl+Blocks.h in Headers */ = {isa = PBXBuildFile; fileRef = 272F1E521C6A4B9C0098F620 /* UIControl+Blocks.h */; };
 		272F1E551C6A4B9C0098F620 /* UIControl+Blocks.m in Sources */ = {isa = PBXBuildFile; fileRef = 272F1E531C6A4B9C0098F620 /* UIControl+Blocks.m */; };
+		27D70E571C79073F00A85204 /* UIControl+Blocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D70E561C79073F00A85204 /* UIControl+Blocks.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -25,7 +26,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		272F1E381C6A4B790098F620 /* UIControl-Blocks.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "UIControl-Blocks.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		272F1E381C6A4B790098F620 /* UIControlBlocks.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UIControlBlocks.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		272F1E3B1C6A4B790098F620 /* UIControl-Blocks.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIControl-Blocks.h"; sourceTree = "<group>"; };
 		272F1E3D1C6A4B790098F620 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		272F1E421C6A4B790098F620 /* UIControl-BlocksTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "UIControl-BlocksTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -33,6 +34,7 @@
 		272F1E491C6A4B790098F620 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		272F1E521C6A4B9C0098F620 /* UIControl+Blocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIControl+Blocks.h"; sourceTree = "<group>"; };
 		272F1E531C6A4B9C0098F620 /* UIControl+Blocks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIControl+Blocks.m"; sourceTree = "<group>"; };
+		27D70E561C79073F00A85204 /* UIControl+Blocks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIControl+Blocks.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,7 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				272F1E431C6A4B790098F620 /* UIControl-Blocks.framework in Frameworks */,
+				272F1E431C6A4B790098F620 /* UIControlBlocks.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,7 +68,7 @@
 		272F1E391C6A4B790098F620 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				272F1E381C6A4B790098F620 /* UIControl-Blocks.framework */,
+				272F1E381C6A4B790098F620 /* UIControlBlocks.framework */,
 				272F1E421C6A4B790098F620 /* UIControl-BlocksTests.xctest */,
 			);
 			name = Products;
@@ -75,6 +77,7 @@
 		272F1E3A1C6A4B790098F620 /* UIControl-Blocks */ = {
 			isa = PBXGroup;
 			children = (
+				27D70E551C79073000A85204 /* Source */,
 				272F1E521C6A4B9C0098F620 /* UIControl+Blocks.h */,
 				272F1E531C6A4B9C0098F620 /* UIControl+Blocks.m */,
 				272F1E3B1C6A4B790098F620 /* UIControl-Blocks.h */,
@@ -90,6 +93,14 @@
 				272F1E491C6A4B790098F620 /* Info.plist */,
 			);
 			path = "UIControl-BlocksTests";
+			sourceTree = "<group>";
+		};
+		27D70E551C79073000A85204 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				27D70E561C79073F00A85204 /* UIControl+Blocks.swift */,
+			);
+			path = Source;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -122,7 +133,7 @@
 			);
 			name = "UIControl-Blocks";
 			productName = "UIControl-Blocks";
-			productReference = 272F1E381C6A4B790098F620 /* UIControl-Blocks.framework */;
+			productReference = 272F1E381C6A4B790098F620 /* UIControlBlocks.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		272F1E411C6A4B790098F620 /* UIControl-BlocksTests */ = {
@@ -201,6 +212,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				272F1E551C6A4B9C0098F620 /* UIControl+Blocks.m in Sources */,
+				27D70E571C79073F00A85204 /* UIControl+Blocks.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -314,6 +326,7 @@
 		272F1E4D1C6A4B790098F620 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -322,14 +335,16 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.nodes.UIControl-Blocks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = UIControlBlocks;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		272F1E4E1C6A4B790098F620 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -338,7 +353,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.nodes.UIControl-Blocks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = UIControlBlocks;
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
