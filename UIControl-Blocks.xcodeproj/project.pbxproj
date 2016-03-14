@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		272F1E3C1C6A4B790098F620 /* UIControl-Blocks.h in Headers */ = {isa = PBXBuildFile; fileRef = 272F1E3B1C6A4B790098F620 /* UIControl-Blocks.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		272F1E431C6A4B790098F620 /* UIControl-Blocks.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 272F1E381C6A4B790098F620 /* UIControl-Blocks.framework */; };
+		272F1E431C6A4B790098F620 /* UIControlBlocks.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 272F1E381C6A4B790098F620 /* UIControlBlocks.framework */; };
 		272F1E481C6A4B790098F620 /* UIControl_BlocksTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 272F1E471C6A4B790098F620 /* UIControl_BlocksTests.m */; };
 		272F1E541C6A4B9C0098F620 /* UIControl+Blocks.h in Headers */ = {isa = PBXBuildFile; fileRef = 272F1E521C6A4B9C0098F620 /* UIControl+Blocks.h */; };
 		272F1E551C6A4B9C0098F620 /* UIControl+Blocks.m in Sources */ = {isa = PBXBuildFile; fileRef = 272F1E531C6A4B9C0098F620 /* UIControl+Blocks.m */; };
@@ -25,7 +25,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		272F1E381C6A4B790098F620 /* UIControl-Blocks.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "UIControl-Blocks.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		272F1E381C6A4B790098F620 /* UIControlBlocks.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UIControlBlocks.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		272F1E3B1C6A4B790098F620 /* UIControl-Blocks.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIControl-Blocks.h"; sourceTree = "<group>"; };
 		272F1E3D1C6A4B790098F620 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		272F1E421C6A4B790098F620 /* UIControl-BlocksTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "UIControl-BlocksTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -47,7 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				272F1E431C6A4B790098F620 /* UIControl-Blocks.framework in Frameworks */,
+				272F1E431C6A4B790098F620 /* UIControlBlocks.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,7 +66,7 @@
 		272F1E391C6A4B790098F620 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				272F1E381C6A4B790098F620 /* UIControl-Blocks.framework */,
+				272F1E381C6A4B790098F620 /* UIControlBlocks.framework */,
 				272F1E421C6A4B790098F620 /* UIControl-BlocksTests.xctest */,
 			);
 			name = Products;
@@ -122,7 +122,7 @@
 			);
 			name = "UIControl-Blocks";
 			productName = "UIControl-Blocks";
-			productReference = 272F1E381C6A4B790098F620 /* UIControl-Blocks.framework */;
+			productReference = 272F1E381C6A4B790098F620 /* UIControlBlocks.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		272F1E411C6A4B790098F620 /* UIControl-BlocksTests */ = {
@@ -320,9 +320,10 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "UIControl-Blocks/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.nodes.UIControl-Blocks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = UIControlBlocks;
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
@@ -336,9 +337,10 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "UIControl-Blocks/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.nodes.UIControl-Blocks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = UIControlBlocks;
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
